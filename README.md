@@ -6,6 +6,8 @@ A Python Discord bot that can be used for bridging two servers' channels togethe
 
 ## Screenshots
 
+![Screenshot 1](./res/01.png)
+
 ## Contributing
 
 For guidelines on how to contribute please refer to [CONTRIBUTING.md](./CONTRIBUTING.md).
