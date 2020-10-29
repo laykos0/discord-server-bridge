@@ -1,6 +1,6 @@
 # discord-server-bridge 
 
-A Python Discord bot that can be used for bridging two servers' channels together.
+A Python Discord bot that can be used for bridging two or more servers' channels together.
 
 ### [Changelog](./CHANGELOG)
 
