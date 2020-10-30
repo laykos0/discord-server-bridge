@@ -3,7 +3,7 @@
 # This program is free software; you can redistribute it and/or modify
 # it under the terms of the GNU Affero General Public License as published by
 # the Free Software Foundation; version 3 of the License.
-# 
+#
 # This program is distributed in the hope that it will be useful,
 # but WITHOUT ANY WARRANTY; without even the implied warranty of
 # MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
@@ -16,15 +16,15 @@ token = ""
 client = discord.Client()
 
 
-async def forward(server_name, message, author, destination):
+async def forward(message, destination):
     for guild in client.guilds:
-        if str(guild) != str(server_name):
+        if guild != message.guild:
             for channel in guild.channels:
                 if channel.name in destination:
                     embed = discord.Embed()
-                    embed.set_author(name=author, icon_url=author.avatar_url)
-                    embed.add_field(name="Server:", value=str(server_name), inline=False)
-                    embed.add_field(name="Message:", value=message, inline=False)
+                    embed.set_author(name=message.author, icon_url=message.author.avatar_url)
+                    embed.add_field(name="Server:", value=str(message.guild), inline=False)
+                    embed.add_field(name="Message:", value=message.content, inline=False)
                     await channel.send(content=None, embed=embed)
 
 
@@ -38,7 +38,7 @@ async def on_message(message):
     bot_tag = ""
 
     if str(message.channel) in channels and str(message.author) != bot_tag:
-        await forward(message.guild.name, message.content, message.author, destination)
+        await forward(message, destination)
 
 
 client.run(token)
