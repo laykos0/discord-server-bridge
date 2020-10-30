@@ -9,9 +9,9 @@ In order to obtain your token visit: [Discord Developer Portal](https://discord.
 
 ## Screenshots
 
-![Screenshot 1](./res/01.png)
-
 ![Screenshot 2](./res/02.png)
+
+![Screenshot 1](./res/01.png)
 
 ## Contributing
 
