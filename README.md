@@ -1,12 +1,17 @@
-# discord-server-bridge 
+# discord-server-bridge
 
 A Python Discord bot that can be used for bridging two or more servers' channels together.
 
 ### [Changelog](./CHANGELOG)
 
+## Setup
+In order to obtain your token visit: [Discord Developer Portal](https://discord.com/developers/applications).       
+
 ## Screenshots
 
 ![Screenshot 1](./res/01.png)
+
+![Screenshot 2](./res/02.png)
 
 ## Contributing
 
