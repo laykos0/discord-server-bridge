@@ -4,7 +4,7 @@ Contributions of all kind are welcome, be it writing documentation, code or tran
 
 ## Code
 
-Please place any additional files you create in respective directories in the `src` dir in the repository's rood. Please indent your code with 4 spaces, not the TAB character.
+Please place any additional files you create in respective directories in the `src` dir in the repository's root. Please indent your code with 4 spaces, not the TAB character.
 
 ## Docs
 
