@@ -1,4 +1,5 @@
 # discord-server-bridge
+[![License: AGPL v3](https://img.shields.io/badge/License-AGPLv3-blue.svg)](https://www.gnu.org/licenses/agpl-3.0.en.html) 
 
 A Python Discord bot that can be used for bridging two or more servers' channels together.
 
