@@ -24,7 +24,11 @@ async def forward(message, destination):
                     embed = discord.Embed()
                     embed.set_author(name=message.author, icon_url=message.author.avatar_url)
                     embed.add_field(name="Server:", value=str(message.guild), inline=False)
-                    embed.add_field(name="Message:", value=message.content, inline=False)
+                     if len(message.content) > 1023:
+                        embed.add_field(name="Message part 1/2", value=message.content[0: 1023], inline=True)
+                        embed.add_field(name="Message part 2/2", value=message.content[1023: len(message.content)], inline=True)
+                    else:
+                        embed.add_field(name="Message:", value=message.content, inline=False)
                     await channel.send(content=None, embed=embed)
 
 
